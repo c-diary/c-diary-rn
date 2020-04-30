@@ -6,15 +6,32 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start"
+    "start": "react-native start",
+    "storybook": "start-storybook -p 7007"
   },
   "dependencies": {
+    "moment": "^2.24.0",
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "react-native-date-picker": "^2.7.9",
+    "react-native-elements": "^2.0.0",
+    "react-native-multiple-select": "^0.5.5",
+    "react-native-vector-icons": "^6.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
-    "metro-react-native-babel-preset": "^0.58.0"
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addon-ondevice-knobs": "^5.3.18",
+    "@storybook/addon-ondevice-notes": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react-native": "^5.3.18",
+    "@storybook/react-native-server": "^5.3.18",
+    "babel-loader": "^8.1.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "moment": "^2.24.0",
+    "react-dom": "^16.9.0"
   }
 }

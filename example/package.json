@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "moment": "^2.24.0",
-    "react": "16.9.0",
-    "react-native": "0.61.5",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
     "react-native-date-picker": "^2.7.9",
+    "react-native-dp3t-sdk": "^0.1.0-alpha.6",
     "react-native-elements": "^2.0.0",
     "react-native-multiple-select": "^0.5.5",
     "react-native-vector-icons": "^6.6.0"
@@ -30,8 +31,6 @@
     "@storybook/react-native": "^5.3.18",
     "@storybook/react-native-server": "^5.3.18",
     "babel-loader": "^8.1.0",
-    "metro-react-native-babel-preset": "^0.58.0",
-    "moment": "^2.24.0",
-    "react-dom": "^16.9.0"
+    "metro-react-native-babel-preset": "^0.58.0"
   }
 }

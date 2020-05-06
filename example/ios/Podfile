@@ -37,4 +37,6 @@ target 'CDiaryRnExample' do
   pod 'c-diary-rn', :path => '../..'
 
   use_native_modules!
+  pod 'react-native-dp3t-sdk', :path => '../node_modules/react-native-dp3t-sdk'
+
 end

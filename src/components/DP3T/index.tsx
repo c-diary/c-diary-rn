@@ -5,6 +5,7 @@ import {
   requestPermissions,
   start,
   stop,
+  isInitialized,
 } from 'react-native-dp3t-sdk';
 
 interface Props {
@@ -12,12 +13,16 @@ interface Props {
   publicKeyBase64: string;
 }
 
-interface State {}
+interface State {
+  initialized: boolean;
+}
 
 export default class DP3T extends React.Component<Props, State> {
   constructor(props: any) {
     super(props);
-    this.state = {};
+    this.state = {
+      initialized: false,
+    };
   }
 
   async connectBackend() {
@@ -34,6 +39,7 @@ export default class DP3T extends React.Component<Props, State> {
 
   componentDidMount() {
     this.connectBackend();
+    isInitialized().then(initialized => this.setState({ initialized }));
   }
 
   componentWillUnmount() {
@@ -57,6 +63,18 @@ export default class DP3T extends React.Component<Props, State> {
             }
           }}
         />
+        {!this.state.initialized ? (
+          <Button
+            title="Init"
+            onPress={async () => {
+              console.log('init');
+              this.connectBackend();
+              isInitialized().then(initialized =>
+                this.setState({ initialized })
+              );
+            }}
+          />
+        ) : null}
       </View>
     );
   }

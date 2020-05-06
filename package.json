@@ -11,7 +11,8 @@
     "lib",
     "android",
     "ios",
-    "c-diary-rn.podspec"
+    "c-diary-rn.podspec",
+    "!example"
   ],
   "scripts": {
     "test": "jest",
@@ -58,7 +59,7 @@
     "react": "~16.9.0",
     "react-native": "~0.61.5",
     "react-native-date-picker": "^2.7.9",
-    "react-native-dp3t-sdk": "^0.1.0-alpha.6",
+    "react-native-dp3t-sdk": "^0.1.0-alpha.7",
     "react-native-elements": "^2.0.0",
     "react-native-multiple-select": "^0.5.5",
     "release-it": "^12.6.3",

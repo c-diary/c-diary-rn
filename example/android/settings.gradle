@@ -4,3 +4,6 @@ include ':app'
 
 include ':cdiaryrn'
 project(':cdiaryrn').projectDir = new File(rootProject.projectDir, '../../android')
+
+include ':react-native-dp3t-sdk'
+project(':react-native-dp3t-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-dp3t-sdk/android')

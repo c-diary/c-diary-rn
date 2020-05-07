@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 import NewDiaryEntry from './NewDiaryEntry';
 import DP3T from './DP3T';
+import Wallet from './Wallet';
 
 storiesOf('Diary', module).add('new diary entry', () => <NewDiaryEntry />);
 
@@ -15,3 +16,5 @@ storiesOf('DP3T', module).add('DP3T', () => (
     }
   />
 ));
+
+storiesOf('Wallet', module).add('Wallet', () => <Wallet />);

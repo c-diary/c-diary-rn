@@ -11,8 +11,13 @@ yarn add c-diary-rn
 ### dependencies
 
 ```sh
+yarn add @react-native-community/async-storage
+yarn add @react-native-community/clipboard
 yarn add rn-nodeify
 npx rn-nodeify --install constants,crypto,stream,vm --hack
+
+yarn install
+
 ```
 
 ## Usage

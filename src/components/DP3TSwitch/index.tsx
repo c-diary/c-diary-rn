@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, Switch, Text } from 'react-native';
+import { Overlay } from 'react-native-elements';
+
 import {
   initWithDiscovery,
   requestPermissions,
@@ -7,6 +9,8 @@ import {
   stop,
   isInitialized,
 } from 'react-native-dp3t-sdk';
+
+import { DP3TStatus } from '../DP3TStatus';
 
 interface Props {
   backendAppId: string;
@@ -16,6 +20,7 @@ interface Props {
 interface State {
   initialized: boolean;
   enabled: boolean;
+  details: boolean;
 }
 
 export default class DP3T extends React.Component<Props, State> {
@@ -24,6 +29,7 @@ export default class DP3T extends React.Component<Props, State> {
     this.state = {
       initialized: false,
       enabled: false,
+      details: false,
     };
   }
 
@@ -61,6 +67,10 @@ export default class DP3T extends React.Component<Props, State> {
     }
   }
 
+  showDetails() {
+    this.setState({ details: false });
+  }
+
   render() {
     return (
       <View
@@ -70,7 +80,15 @@ export default class DP3T extends React.Component<Props, State> {
           justifyContent: 'center',
         }}
       >
-        <Text>Contact tracing</Text>
+        <Text onPress={() => this.setState({ details: true })}>
+          Contact tracing
+        </Text>
+        <Overlay
+          isVisible={this.state.details}
+          onBackdropPress={() => this.setState({ details: false })}
+        >
+          <DP3TStatus />
+        </Overlay>
         <Switch
           style={{ marginTop: 30 }}
           onValueChange={() => this.toggleSwitch()}

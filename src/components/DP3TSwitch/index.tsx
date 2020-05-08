@@ -55,7 +55,7 @@ export default class DP3T extends React.Component<Props, State> {
       const permission = await requestPermissions();
       if (permission && permission === 'granted') {
         start().then(() => {
-          this.setState({ enabled: false });
+          this.setState({ enabled: true });
         });
       }
     }

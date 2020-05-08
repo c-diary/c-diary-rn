@@ -5,7 +5,14 @@ React Native Components for c-diary
 ## Installation
 
 ```sh
-npm install c-diary-rn
+yarn add c-diary-rn
+```
+
+### dependencies
+
+```sh
+yarn add rn-nodeify
+npx rn-nodeify --install constants,crypto,stream,vm --hack
 ```
 
 ## Usage

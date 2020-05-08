@@ -12,6 +12,7 @@
     "android",
     "ios",
     "c-diary-rn.podspec",
+    "package.json",
     "!example"
   ],
   "scripts": {

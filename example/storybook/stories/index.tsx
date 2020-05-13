@@ -5,6 +5,7 @@ import DP3T from './DP3T';
 import DP3TSwitch from './DP3TSwitch';
 import Wallet from './Wallet';
 import ReportSymptoms from './ReportSymptoms';
+import ContactTracingSwitch from './ContactTracingSwitch';
 
 storiesOf('Diary', module).add('new diary entry', () => <NewDiaryEntry />);
 
@@ -34,4 +35,8 @@ storiesOf('Wallet', module).add('Wallet', () => <Wallet />);
 
 storiesOf('ReportSymptoms', module).add('ReportSymptoms', () => (
   <ReportSymptoms />
+));
+
+storiesOf('ContactTracingSwitch', module).add('ContactTracingSwitch', () => (
+  <ContactTracingSwitch />
 ));

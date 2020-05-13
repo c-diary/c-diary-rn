@@ -142,6 +142,7 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.10.0",
     "@react-native-community/clipboard": "^1.2.2",
-    "c-diary-js": "https://github.com/c-diary/c-diary-js.git"
+    "c-diary-js": "https://github.com/c-diary/c-diary-js.git",
+    "rn-contact-tracing": "^0.0.4"
   }
 }

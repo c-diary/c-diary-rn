@@ -8518,6 +8518,11 @@ rimraf@~2.2.6:
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
   integrity sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI=
 
+rn-contact-tracing@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/rn-contact-tracing/-/rn-contact-tracing-0.0.4.tgz#d7b3dbe8fb3b1e3fe2392c9a53255558851257c5"
+  integrity sha512-z1/hNnw3Egg+0L3JfR51g+FF+2g9nE7v8y4CTPIggEvtmP8Q/hlRkjfoLfKOLzLSk4BRSjhVomUn7q2S2E6OCw==
+
 rsvp@^4.8.4:
   version "4.8.5"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.8.5.tgz#c8f155311d167f68f21e168df71ec5b083113734"

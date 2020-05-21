@@ -4,5 +4,15 @@ declare module 'rn-contact-tracing' {
   function stopBLEScan(): any;
   function startBLEScan(): any;
   function advertise(): any;
-  export = { setConfig, setPublicKeys, stopBLEScan, startBLEScan, advertise };
+  function stopBLEService(): any;
+  function startBLEService(): any;
+  export = {
+    setConfig,
+    setPublicKeys,
+    stopBLEScan,
+    startBLEScan,
+    advertise,
+    startBLEService,
+    stopBLEService,
+  };
 }

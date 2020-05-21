@@ -3,5 +3,6 @@ declare module 'rn-contact-tracing' {
   function setPublicKeys(keys: string[]): any;
   function stopBLEScan(): any;
   function startBLEScan(): any;
-  export = { setConfig, setPublicKeys, stopBLEScan, startBLEScan };
+  function advertise(): any;
+  export = { setConfig, setPublicKeys, stopBLEScan, startBLEScan, advertise };
 }

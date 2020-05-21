@@ -26,7 +26,7 @@ export default class ContactTracingSwitch extends React.Component<
 
   async connectBackend() {
     const config = {
-      serviceUUID: '00000000-0000-1000-8000-00805F9B34FB',
+      serviceUUID: '',
       scanDuration: 0,
       scanInterval: 0,
       advertiseInterval: 0,
@@ -35,8 +35,9 @@ export default class ContactTracingSwitch extends React.Component<
       token: 'default_token',
     };
     SpecialBle.setConfig(config);
-    let publicKeys = ['12345', '12346', '12347', '12348', '12349'];
-    SpecialBle.setPublicKeys(publicKeys);
+    SpecialBle.advertise();
+    //let publicKeys = ['12345', '12346', '12347', '12348', '12349'];
+    //SpecialBle.setPublicKeys(publicKeys);
   }
 
   componentDidMount() {

@@ -49,10 +49,10 @@ export default class ContactTracingSwitch extends React.Component<
       this.connectBackend();
     }
     if (this.state.enabled) {
-      await SpecialBle.stopBLEService();
+      SpecialBle.stopBLEService();
       this.setState({ enabled: false });
     } else {
-      await SpecialBle.startBLEService();
+      SpecialBle.startBLEService();
       this.setState({ enabled: true });
     }
   }
